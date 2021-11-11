@@ -15,15 +15,12 @@ namespace SocialNetwork.Tests
         [Test]
         public void ShowTests()
         {
-            bool Bek = true;
-            Assert.True(Bek);
+            string[] words = {"Bek", "Valiev", "123456789", "bekking326@gmail.com"};
             registrationView.Show();
-
-            bool Valiev = true;
-            Assert.True(Valiev);
-            registrationView.Show();
+            Assert.IsNotEmpty(words);
             
-
+            Console.ReadLine();
+            
         }
     }
 }
